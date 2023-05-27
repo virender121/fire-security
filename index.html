@@ -64,7 +64,7 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg  navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="./Images/desktopNavbarlogo.png" alt="Logo" class="logo">
@@ -121,8 +121,8 @@
                 <div class="col-md-6">
                   <div class="text-center text-md-start">
                     <h1 class="main-heading  display-4 fw-bold fs-3rem text-start" style="color:#000000">Safeguarding lives and property</h1>
-                    <p class="trust text-start">Your trusted partner for comprehensive fire safety solutions.</p>
-                    <p class="lives lead text-start">Protecting lives and property with expertise and precision, SR Divya Agni Control Systems is your trusted partner for comprehensive fire safety solutions.</p>
+                    <p class="trust text-start mb-5">Your trusted partner for comprehensive fire safety solutions.</p>
+                    <p class="lives text-start ">Protecting lives and property with expertise and precision, SR Divya Agni Control Systems is your trusted partner for comprehensive fire safety solutions.</p>
                     <button class="contact-btn-border"><span class="contact-text">Contact now</span></button>
                   </div>
                 </div>
@@ -161,25 +161,27 @@
                       <img src="Images/dynamic-wang-efMMsZP8Qqw-unsplash 1.png" alt="Right Side Image" class="img-fluid rightimage" style="max-width: 100%;">
                     </div>
                     
-                    <div class="col-2 text-start ">
+                    <div class="col-2 text-start" style="padding-left: 0; left: 0;">
                       <img src="./Images/Line 77.png" alt="" class="line1">
                     </div>
                     
-                    <div class="col-md-4 col-lg-3 d-flex flex-column text-start">
+                    
+                    <div class="col-md-5 col-lg-4 d-flex flex-column text-start">
                       <div class="d-flex align-items-center">
                         <img src="./Images/Checkmark.png" alt="Checkmark" class="checkmark-img" style="width: 16.82px; height: 16.82px; background-color: #CE2028;">
                         <p class="checkmark-text">Fire Safety Experts</p>
                       </div>
-                      <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center" >
                         <img src="./Images/Checkmark.png" alt="Checkmark" class="checkmark-img" style="width: 16.82px; height: 16.82px; background-color: #CE2028;">
-                        <p class="checkmark-text  checkmark-text-comperhensive d-flex">Comprehensive Solutions</p>
+                        <p class="checkmark-text checkmark-text-comperhensive d-flex">Comprehensive Solutions</p>
                       </div>
+                      
                       <div class="d-flex align-items-center">
                         <img src="./Images/Checkmark.png" alt="Checkmark" class="checkmark-img" style="width: 16.82px; height: 16.82px; background-color: #CE2028;">
                         <p class="checkmark-text">Tailored Approach</p>
                       </div>
                     </div>
-                    <div class="col-md-4 col-lg-3 d-flex flex-column">
+                    <div class="col-md-5 col-lg-3 d-flex flex-column">
                       <div class="d-flex align-items-center">
                         <img src="./Images/Checkmark.png" alt="Checkmark" class="checkmark-img" style="width: 16.82px; height: 16.82px; background-color: #CE2028;">
                         <p class="checkmark-text">Experienced Team</p>
@@ -368,6 +370,33 @@
               
               
               
+              <!--==============scroller==================-->
+              <div class="image-container" style="position: fixed; bottom: 0; right: 0; margin-right: 2rem; margin-bottom: 2rem; z-index: 9999;">
+                <img src="./Images/Rectangle 48.png" alt="ellipse" style="vertical-align: middle; display: none;" id="rectangleImage">
+                <img src="./Images/Arrow 1.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; cursor: pointer; display: none;" onclick="scrollToTop()" id="scrollToTopButton">
+              </div>
+              
+              <script>
+                var rectangleImage = document.getElementById('rectangleImage');
+                var scrollToTopButton = document.getElementById('scrollToTopButton');
+              
+                window.addEventListener('scroll', function() {
+                  if (window.scrollY > 100) {
+                    rectangleImage.style.display = 'block';
+                    scrollToTopButton.style.display = 'block';
+                  } else {
+                    rectangleImage.style.display = 'none';
+                    scrollToTopButton.style.display = 'none';
+                  }
+                });
+              
+                function scrollToTop() {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              </script>
+              
+              
+              
               
               
               <!---------contact page------------>
@@ -380,31 +409,39 @@
         <p class="text-center text-white text-capitalize">Want to install our Fire Control System in your facility? Or just need more information? Feel free to get in touch with us and get a free quote!</p>
         <form>
           <div class="row mb-3">
-            <div class="col-md-6 ">
-              <div class="input-wrapper">
-              <label for="name" class="form-label text-white">Name</label>
-              <input type="text" class="form-control border-0 border-bottom" id="name">
-            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control border-0 border-bottom" id="name" required>
+                <label for="name" class="form-label text-white">Name*</label>
+              </div>
             </div>
             <div class="col-md-6">
-              <label for="company" class="form-label text-white">Company Name</label>
-              <input type="text" class="form-control border-0 border-bottom" id="company">
+              <div class="form-group">
+                <input type="text" class="form-control border-0 border-bottom" id="company" required>
+                <label for="company" class="form-label text-white">Company Name*</label>
+              </div>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-md-6">
-              <label for="phone" class="form-label text-white">Phone Number</label>
-              <input type="text" class="form-control border-0 border-bottom" id="phone">
+              <div class="form-group">
+                <input type="text" class="form-control border-0 border-bottom" id="phone" required>
+                <label for="phone" class="form-label text-white">Phone Number*</label>
+              </div>
             </div>
             <div class="col-md-6">
-              <label for="email" class="form-label text-white">Email Address</label>
-              <input type="email" class="form-control border-0 border-bottom" id="email">
+              <div class="form-group">
+                <input type="email" class="form-control border-0 border-bottom" id="email" required>
+                <label for="email" class="form-label text-white">Email Address*</label>
+              </div>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-md-12">
-              <label for="message" class="form-label text-white">Your Message</label>
-              <textarea class="form-control border-0 border-bottom" id="message" rows="5"></textarea>
+              <div class="form-group">
+                <textarea class="form-control border-0 border-bottom" id="message" rows="5" required></textarea>
+                <label for="message" class="form-label text-white">Your Message*</label>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -413,44 +450,44 @@
             </div>
           </div>
         </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
- 
-   .form-control {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #fff;
-    transition: border-bottom-color 0.3s;
-    padding-top: 10px;
-  } 
-
-   .form-control:focus {
-    outline: none;
-    border-bottom-color: #CE2028;
-  }
-
-  .form-label {
-    position: absolute;
-    pointer-events: none;
-    top: 24px;
-    left: 0;
-    transition: all 0.3s;
-    opacity: 0.5;
-    font-size: 14px;
-  }
-
-  .form-control:focus ~ .form-label,
-  .form-control:valid ~ .form-label {
-    top: 0;
-    font-size: 12px;
-    opacity: 1;
-  } 
-  .custom-btn {
+        
+        <style>
+          .form-group {
+            position: relative;
+          }
+          
+          .form-control {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #fff;
+            transition: border-bottom-color 0.3s;
+            padding-top: 10px;
+          }
+        
+          .form-control:focus {
+            outline: none;
+            border-bottom-color: #CE2028;
+          }
+        
+          .form-label {
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            transition: all 0.3s;
+            opacity: 0.5;
+            font-size: 14px;
+            transform: translateY(100%);
+          }
+        
+          .form-control:focus ~ .form-label,
+          .form-control:valid ~ .form-label {
+            transform: translateY(0);
+            font-size: 12px;
+            opacity: 1;
+          }
+          .custom-btn {
   left: calc(50% - 316px/2);
   background: #FFFFFF;
   border-radius: 16px;
@@ -467,8 +504,34 @@
   
   color: #FF0000;
 }
+        </style>
+        
+        <script>
+          const formInputs = document.querySelectorAll('.form-control');
+        
+          formInputs.forEach(input => {
+            input.addEventListener('input', handleInputChange);
+          });
+        
+          function handleInputChange(e) {
+            const input = e.target;
+            const label = input.nextElementSibling;
+        
+            if (input.value !== '') {
+              label.classList.add('active');
+            } else {
+              label.classList.remove('active');
+            }
+          }
+        </script>
+        </div>
+        </div>
+  </div>
+  </div>
+        
+ 
 
-</style>
+
 
                
               

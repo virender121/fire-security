@@ -120,9 +120,9 @@
               <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
                   <div class="text-center text-md-start">
-                    <h1 class="main-heading  display-4 fw-bold fs-3rem" style="color:#000000">Safeguarding lives and property</h1>
-                    <p class="trust">Your trusted partner for comprehensive fire safety solutions.</p>
-                    <p class="lives lead">Protecting lives and property with expertise and precision, SR Divya Agni Control Systems is your trusted partner for comprehensive fire safety solutions.</p>
+                    <h1 class="main-heading  display-4 fw-bold fs-3rem text-start" style="color:#000000">Safeguarding lives and property</h1>
+                    <p class="trust text-start">Your trusted partner for comprehensive fire safety solutions.</p>
+                    <p class="lives lead text-start">Protecting lives and property with expertise and precision, SR Divya Agni Control Systems is your trusted partner for comprehensive fire safety solutions.</p>
                     <button class="contact-btn-border"><span class="contact-text">Contact now</span></button>
                   </div>
                 </div>
@@ -158,7 +158,7 @@
                     </div>
               
                     <div class="col-md-4 col-lg-3 text-center text-md-end mt-5">
-                      <img src="Images/dynamic-wang-efMMsZP8Qqw-unsplash 1.png" alt="Right Side Image" class="img-fluid rightimage" style="max-width: 100%; height: auto;">
+                      <img src="Images/dynamic-wang-efMMsZP8Qqw-unsplash 1.png" alt="Right Side Image" class="img-fluid rightimage" style="max-width: 100%;">
                     </div>
                     
                     <div class="col-2 text-start ">
@@ -172,7 +172,7 @@
                       </div>
                       <div class="d-flex align-items-center">
                         <img src="./Images/Checkmark.png" alt="Checkmark" class="checkmark-img" style="width: 16.82px; height: 16.82px; background-color: #CE2028;">
-                        <p class="checkmark-text">Comprehensive Solutions</p>
+                        <p class="checkmark-text  checkmark-text-comperhensive d-flex">Comprehensive Solutions</p>
                       </div>
                       <div class="d-flex align-items-center">
                         <img src="./Images/Checkmark.png" alt="Checkmark" class="checkmark-img" style="width: 16.82px; height: 16.82px; background-color: #CE2028;">
@@ -212,14 +212,14 @@
                       <div class="row mt-5 my-5">
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
                           <div class="card text-white bg-transparent border-white">
-                            <div class="card-body" style="background-color: #CE2028;">
+                            <div class="card-body" >
                               <h5 class="card-title text-start">1.</h5>
                               <p class="card-text text-start">Fire Risk Assessment</p>
                             </div>
                           </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card text-white bg-transparent border-white">
+                          <div class="card cards text-white bg-transparent border-white">
                             <div class="card-body">
                               <h5 class="card-title text-start">2.</h5>
                               <p class="card-text text-start">Fire Detection System</p>
@@ -227,7 +227,7 @@
                           </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card text-white bg-transparent border-white">
+                          <div class="card cards text-white bg-transparent border-white">
                             <div class="card-body">
                               <h5 class="card-title text-start">3.</h5>
                               <p class="card-text text-start">Fire Suppression Systems</p>
@@ -235,7 +235,7 @@
                           </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card text-white bg-transparent border-white">
+                          <div class="card cards text-white bg-transparent border-white">
                             <div class="card-body">
                               <h5 class="card-title text-start">4.</h5>
                               <p class="card-text text-start">Emergency Planning and Preparedness</p>
@@ -243,15 +243,36 @@
                           </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                          <div class="card text-white bg-transparent border-white">
+                          <div class="card cards text-white bg-transparent border-white">
                             <div class="card-body">
                               <h5 class="card-title text-start">5.</h5>
                               <p class="card-text text-start">Expert Consultancy</p>
                             </div>
                           </div>
                         </div>
+                        <style>
+                          .cards:hover,
+                          .cards.hovered {
+                            background-color: #CE2028;
+                            transition: background-color 0.3s ease-in-out;
+                          }
+                        </style>
+                        
+                        
+                        <script>
+                          var cards = document.querySelector('.cards');
+                          cards.addEventListener('touchstart', function() {
+                            cards.classList.add('hovered');
+                          });
+                        
+                          cards.addEventListener('touchend', function() {
+                            cards.classList.remove('hovered');
+                          });
+                        </script>
+                        
                       </div>
                     </div>
+                   
                   </div>
               
                   <div class="row mt-4">
@@ -324,11 +345,25 @@
                      }
 
 
-                  .card-custom:hover {
-                    background-color: #CE2028;
-                    transition: background-color 0.3s ease-in-out;
-                  }
+                     .card-custom:hover,
+                     .card-custom.hovered {
+                     background-color: #CE2028;
+                     transition: background-color 0.3s ease-in-out;
+                       }
+
                 </style>
+                <script>
+                  var cardCustom = document.querySelector('.card-custom');
+                  cardCustom.addEventListener('touchstart', function() {
+                  cardCustom.classList.add('hovered');
+                  });
+
+
+                cardCustom.addEventListener('touchend', function() {
+                cardCustom.classList.remove('hovered');
+                 });
+
+                </script>
               </div>
               
               
@@ -345,9 +380,11 @@
         <p class="text-center text-white text-capitalize">Want to install our Fire Control System in your facility? Or just need more information? Feel free to get in touch with us and get a free quote!</p>
         <form>
           <div class="row mb-3">
-            <div class="col-md-6">
+            <div class="col-md-6 ">
+              <div class="input-wrapper">
               <label for="name" class="form-label text-white">Name</label>
               <input type="text" class="form-control border-0 border-bottom" id="name">
+            </div>
             </div>
             <div class="col-md-6">
               <label for="company" class="form-label text-white">Company Name</label>
@@ -372,7 +409,7 @@
           </div>
           <div class="row">
             <div class="col-md-12 text-center">
-              <button type="submit" class="btn btn-light mb-4">Submit</button>
+              <button type="submit" class="btn custom-btn mb-4">Submit</button>
             </div>
           </div>
         </form>
@@ -382,16 +419,17 @@
 </div>
 
 <style>
-  .form-control {
+ 
+   .form-control {
     background-color: transparent;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #fff;
     transition: border-bottom-color 0.3s;
     padding-top: 10px;
-  }
+  } 
 
-  .form-control:focus {
+   .form-control:focus {
     outline: none;
     border-bottom-color: #CE2028;
   }
@@ -411,32 +449,52 @@
     top: 0;
     font-size: 12px;
     opacity: 1;
-  }
+  } 
+  .custom-btn {
+  left: calc(50% - 316px/2);
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 7px 25px;
+  
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  
+  color: #FF0000;
+}
+
 </style>
 
                
               
               <!--=========Feedback=============-->
-              <div class="container-fluid justify-content-center">
+              <div class="container-fluid ">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-12">
-                      <h1 class="text-uppercase mt-4 testimonial text-start">What our clients say</h1>
+                    <div class="col-md-12 justify-content-center">
+                      <div class="testimonial-wrapper">
+                      <h1 class=" text-start mt-4 testimonial">What our clients say</h1>
+                      </div>
                     </div>
                     <div class="row mt-4">
-                      <div class="col-md-3">
+                      <div class="col-md-3 justify-content-center">
                         <div class="card mycard">
                           <div class="card-body d-flex justify-content-center align-items-center">
-                            <img src="./Images/dynamic-wang-efMMsZP8Qqw-unsplash 1.png" alt="Client Image" id="clientImage" class="img-fluid">
+                            <img src="./Images/dynamic-wang-efMMsZP8Qqw-unsplash 1.png" alt="Client Image" id="clientImage" class="img-fluid" style="height: 80px; width: 80px;">
                           </div>
                         </div>
                         <p class="text-bold testi-lorem text-center" id="">lorem ipsum (dolor)</p>
                       </div>
               
-                      <div class="col-md-9">
+                      <div class="col-md-9 justify-content-center">
                         <p class="testimonial-text text-center" id="clientText">Lorem ipsum dolor sit amet consectetur. Tincidunt id magna turpis libero vel sit dui nulla adipiscing. Leo cras sollicitudin phasellus aenean in ac viverra suspendisse tincidunt. Pulvinar orci non varius eu vivamus sociis montes tellus.</p>
                       </div>
-                      <div class="col-md-6 text-start mb-5 d-flex mt-5">
+                      <div class="col-md-6 text-start mb-5 d-flex mt-5 ">
                         <div class="image-container d-flex justify-content-center" style="position: relative;">
                           <img src="./Images/Ellipse 3.png" alt="ellipse" style="vertical-align: middle;">
                           <img src="./Images/Arrow 5.png" alt="arrow" class="arrow" onclick="changeImage('previous')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
@@ -447,13 +505,20 @@
                           <img src="./Images/Arrow 4.png" alt="arrow" class="arrow" onclick="changeImage('next')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
                         </div>
                       </div>
-                      <div class="col-md-6 text-start">
+                      <div class=" hide col-md-6 text-start">
                         <!-- <div class="row mt-3 mb-5"> -->
                           <!-- <div class="col-12 d-flex justify-content-center "> -->
                             <img src="./Images/Rectangle 66.png" alt="slider" class="mx-0">
                             <img src="./Images/Rectangle 67.png" alt="slider" class="mx-1">
                             <img src="./Images/Rectangle 68.png" alt="slider" class="mx-0">
                           </div>
+                          <style>
+                            @media (max-width: 767px) {
+                              .hide{
+                                   display: none;
+                                   }
+                                 }
+                          </style>
                         </div>
                       </div>
                     </div>

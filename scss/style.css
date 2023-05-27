@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Commissioner', sans-serif;
+}
+.dropdown-menu {
+  background-color: #f8f9fa; 
+}
+
+.home-div {
+  /* width: 334px; */
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70px;
+}
+
+
+.nav-home {
+ 
+  height: 24px;
+ 
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+
+
+.nav-about {
+  height: 24px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.phone {
+  width: 122px;
+  height: 24px;
+  left: 1056px;
+  top: 81px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.phone-border {
+  box-sizing: border-box;
+  /* position: absolute; */
+  height: 47px;
+  left: 70%;
+  right: 16.74%;
+  top: 70px;
+  border: 2px solid #CE2028;
+  border-radius: 12px;
+}
+
+.contact-border {
+  box-sizing: border-box;
+  margin-left: 0.5rem;
+  /* position: absolute; */
+  height: 47px;
+  left: 83.82%;
+  right: 2.92%;
+  top: 70px;
+  background-color: #CE2028;
+  border: 2px solid #CE2028;
+  border-radius: 12px;
+}
+
+.testimonial {
+  height: 74px;
+  left: 0;
+  top: 3785px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 160.3%;
+  /* identical to box height, or 74px */
+  text-align: justify;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #CE2028;
+}
+
+.contact-btn-border {
+  box-sizing: border-box;
+  /* position: absolute; */
+  width: 220px;
+  height: 69px;
+  left: 8.06%;
+  right: 71.88%;
+  top: 634px;
+  background: #CE2028;
+  border: 2px solid #CE2028;
+  border-radius: 12px;
+}
+
+.contact-text {
+  /* width: 191px; */
+  height: 35px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.card-title {
+
+  height: 80px;
+ 
+  
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 160.3%;
+  margin-bottom: 0.4rem;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  
+}
+
+.checkmark-text {
+  /* width: 181px; */
+  height: 32px;
+ 
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160.3%;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  color: #CE2028;
+}
+.checkmark-img{
+  margin-right: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+.hover-effect:hover {
+  background-color: #CE2028; /* Set the desired hover background color */
+  transition: background-color 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.card-text {
+  /* width: 179px; */
+  height: 77px;
+  /* left: 866px;
+  top: 1986px; */
+  
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  /* or 24px */
+  
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  
+  color: #FFFFFF;
+  margin-top: 0.4rem;
+  
+}
+
+.contact {
+  width: 165px;
+  height: 24px;
+  left: 1241px;
+  top: 81px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.nav-service {
+
+  height: 24px;
+  
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.heading2 {
+  /* width: 736px; */
+  /* height: 168px; */
+  /* left: 96px;
+  top: 785px; */
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  /* line-height: 56px; */
+  /* letter-spacing: 0.015em; */
+  text-transform: capitalize;
+  color: #000000;
+  /* margin-bottom: 1rem; */
+  /* overflow: hidden; */
+}
+
+.trust {
+  max-width: 706px;
+  font-family: "Commissioner";
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+} 
+
+.trust2 {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.lives {
+  
+  font-weight: 400;
+  font-size: 20px;
+  /* line-height: 24px; */
+  letter-spacing: 0.015em;
+  color: #000000;
+
+}
+
+.checkmark-text-comperhensive {
+  width: 242px;
+  height: 32px;
+  /* left: 220px;
+  top: 1446px; */
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160.3%;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  color: #CE2028;
+}
+
+.checkmark-text-approach {
+  width: 174px;
+  height: 32px;
+   /* left: 220px; */
+  /* top: 1506px;  */
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160.3%;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  color: #CE2028;
+}
+
+.checkmark-text-safety {
+  width: 217px;
+  height: 32px;
+  /* left: 562px;
+  top: 1446px; */
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160.3%;
+  /* identical to box height, or 32px */
+  text-align: justify;
+  letter-spacing: 0.015em;
+  color: #CE2028;
+}
+
+.line1 {
+  margin-top: 3.8rem;
+  width: 151px;
+  height: 0px;
+  border: 6px solid #CE2028;
+  transform: rotate(90deg);
+  align-items: start;
+}
+@media screen  and (max-width: 768px) {
+  .line1{
+    display: none;
+  }
+}
+.rectangle1 {
+  width: 120px;
+  height: 4px;
+  left: 96px;
+  top: 964px;
+}
+
+.headexperti {
+  height: 74px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.headexperti::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 11%;
+  height: 0.4rem;
+  background-color: #CE2028;
+  transition: transform 0.3s;
+  transform: translateX(0);
+}
+
+.headexperti:hover::after {
+  transform: translateX(-100%);
+}
+
+@media (max-width: 768px) {
+  .headexperti {
+    font-size: 34px;
+  }
+  .headexperti::after {
+    width: 10%;
+    transform: translateX(0);
+  }
+}
+.gallery {
+  /* width: 212px; */
+  height: 74px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 160.3%;
+  /* identical to box height, or 74px */
+  text-align: justify;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  position: relative;
+  color: #CE2028;
+  overflow: hidden;
+}
+
+.gallery::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 11%;
+  height: 0.4rem;
+  background-color: #CE2028;
+  transition: transform 0.3s;
+  transform: translateX(0);
+  /* Added to hide the line initially */
+}
+
+.gallery:hover::after {
+  transform: translateX(-100%); /* Added to show the line on hover */
+}
+
+.card {
+  width: 210px;
+  height: 210px;
+  border: 4px solid #FFFFFF;
+}
+
+.mycard {
+  width: 142px;
+  height: 122px;
+  background-color: #D9D9D9;
+  border-radius: 12px;
+}
+.testimonial {
+  height: 74px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 160.3%;
+  text-align: justify;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+
+  color: #CE2028;
+margin-bottom: 5rem;
+}
+
+/* .testimonial::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 11%;
+  height: 0.4rem;
+  background-color: #CE2028;
+  transition: transform 0.3s;
+  transform: translateX(0);
+  /* Added to hide the line initially */
+
+
+/* .testimonial:hover::after {
+  transform: translateX(-100%); /* Added to show the line on hover */
+
+.testi-lorem{
+  
+  height: 24px;
+margin-top: 3rem;
+font-family: 'Commissioner';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+text-align: center;
+letter-spacing: 0.015em;
+color: #000000;
+}
+.testimonial-text {
+  /* height: 72px; */
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  /* or 24px */
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.text2expertise {
+ 
+  /* height: 48px; */
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+}
+
+.text1expertise {
+  /* width: 1147px; */
+  /* height: 48px; */
+  /* left: 108px;
+  top: 1739px; */
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  color: #FFFFFF;
+}
+
+.text2 {
+  width: 736px;
+  height: 48px;
+  left: 116px;
+  top: 575px;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.015em;
+  color: #000000;
+}
+
+.footer-icons {
+  width: 364px;
+  height: 75px;
+  margin-left: 35.8rem;
+  background: #CE2028;
+  border-radius: 66px;
+}
+
+
+ @media (min-width: 768px) and (max-width: 992px) {
+  .footer-icons {
+    width: 100%;
+    margin-left: 19.5rem; 
+    background: #CE2028;
+  } 
+ 
+}
+@media screen and (max-width: 768px) {
+  .footer-icons {
+    width: 10%; 
+    margin-left:8rem ;
+    background: #CE2028; 
+  }
+} 

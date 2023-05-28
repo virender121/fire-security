@@ -179,8 +179,7 @@ body {
 .card-text {
   /* width: 179px; */
   height: 77px;
-  /* left: 866px;
-  top: 1986px; */
+ 
   
   font-family: 'Commissioner';
   font-style: normal;
@@ -334,16 +333,20 @@ body {
 }
 
 .line1 {
-  margin-top: 3.8rem;
-  width: 151px;
-  height: 0px;
-  border: 6px solid #CE2028;
-  transform: rotate(90deg);
+  
+  height:151px;
+  border: 3px solid #CE2028;
+ 
   align-items: start;
+  padding-left: 0%;
 }
 @media screen  and (max-width: 768px) {
   .line1{
     display: none;
+  }
+  .checkmark-mob{
+    display: flex;
+    flex-direction: column;
   }
 }
 .rectangle1 {

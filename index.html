@@ -18,96 +18,202 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/css/bootstrap.min.css">
-  <style>
-    .logo {
-      width: 139px;
-      height: 139px;
-      margin-left: 47px;
-      margin-top: 24px;
-    }
 
-    @media (max-width: 768px) {
+  
+    <style>
       .logo {
-        width: 50px;
-        height: 50px;
+        width: 139px;
+        height: 139px;
+        margin-left: 47px;
+        margin-top: 24px;
       }
-    }
-
-    @media (min-width: 769px) and (max-width: 992px) {
-      .logo {
-        width: 100px;
-        height: 100px;
+  
+      @media (max-width: 768px) {
+        .logo {
+          width: 50px;
+          height: 50px;
+        }
       }
-    }
-
-    @media (min-width: 993px) {
-      .logo {
-        width: 120px;
-        height: 120px;
+  
+      @media (min-width: 769px) and (max-width: 992px) {
+        .logo {
+          width: 100px;
+          height: 100px;
+        }
       }
-    }
+  
+      @media (min-width: 993px) {
+        .logo {
+          width: 120px;
+          height: 120px;
+        }
+      }
+  
+      .border {
+        color: white;
+      }
+  
+      .border-rounded {
+        border-radius: 20px;
+      }
+  
+      /* Reduce padding/margin for navbar items */
+      .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
 
-    .border {
-      color: white;
-    }
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./Images/desktopNavbarlogo.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-home active" href="#">HOME</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link nav-about" href="#about-us">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-service" href="#expertise">SERVICES</a>
+            </li>
+          </ul>
+          <button class="nav-item phone-border d-flex justify-content-center align-items-center">
+            <span style="margin-top: 10px;"><span class="material-symbols-outlined text-center" style="color: #CE2028; display: inline-block; vertical-align: middle;">
+              call
+            </span>
+            <p class="phone " style="display: inline-block; vertical-align: middle; margin-left: 5px;">
+              9876543210
+            </p></span>
+          </button>
+          
+          
+          <button class="nav-item contact-border justify-content-center">
+            <a class="nav-link contact text-white text-center"style="margin-bottom: 13px;" href="#contact-us">Contact us</a>
+          </button>
 
-    .border-rounded {
-      border-radius: 20px;
-    }
-
-    /* Reduce padding/margin for navbar items */
-    .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-    }
-  </style>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg  navbar-light bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="./Images/desktopNavbarlogo.png" alt="Logo" class="logo">
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center home-div" id="navbarNavDropdown">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item ">
-            <a class="nav-link nav-home active" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  nav-about" href="blogs.html">ABOUT US</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link nav-service" href="contact.html">SERVICES</a>
-          </li>
-        </ul>
+        </div>
       </div>
+    </nav>
+  
+    <style>
+      .home-div {
+        position: absolute;
+        top: 70px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        left: 0;
+      }
+      
+      @media (max-width: 767px) {
+        .home-div {
+          justify-content: flex-start;
+         
+        }
+        button{
+          display: flex;
+          flex-direction: column;
+          
+        }
+      
+      }
 
-      <div class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav">
-          <li class="nav-item phone-border justify-content-end">
-            <a class="nav-link" href="login.html">
-              <span class="material-symbols-outlined text-center" style="color: #CE2028; display: inline-block; vertical-align: middle;">
-                call
-              </span>
-              <p class="phone" style="display: inline-block; vertical-align: middle; margin-left: 5px;">
-                9876543210
-              </p>
-            </a>
-          </li>
-          <li class="nav-item contact-border">
-            <a class="nav-link contact text-white" href="register.html">Contact us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      @media (min-width: 769px) and (max-width: 992px) {
+        button{
+          display: flex;
+          flex-direction: column;
+          
+        }
+      }
+  
+      .nav-home {
+        /* height: 24px; */
+        font-family: "Commissioner";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #000000;
+      }
+  
+      .navbar-nav {
+        list-style: none;
+      }
+  
+      .nav-about {
+        /* height: 24px; */
+        font-family: "Commissioner";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #000000;
+      }
+  
+      .phone {
+        font-family: "Commissioner";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #000000;
+       
+      }
+  
+      .phone-border {
+        box-sizing: border-box;
+        height: 47px;
+        left: 70%;
+        right: 16.74%;
+        top: 70px;
+        border: 2px solid #CE2028;
+        border-radius: 12px;
+      }
+  
+      .contact-border {
+        box-sizing: border-box;
+        margin-left: 0.5rem;
+        height: 47px;
+        left: 83.82%;
+        right: 2.92%;
+        top: 70px;
+        background-color: #CE2028;
+        border: 2px solid #CE2028;
+        border-radius: 12px;
+      }
+  
+      .nav-service {
+        /* height: 24px;  */
+        font-family: "Commissioner";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #000000;
+      }
+    </style>
 
-
+  
+ 
+  
 
 
      
@@ -122,7 +228,7 @@
                     <h1 class="main-heading  display-4 fw-bold fs-3rem text-start" style="color:#000000">Safeguarding lives and property</h1>
                     <p class="trust text-start mb-5">Your trusted partner for comprehensive fire safety solutions.</p>
                     <p class="lives text-start ">Protecting lives and property with expertise and precision, SR Divya Agni Control Systems is your trusted partner for comprehensive fire safety solutions.</p>
-                    <button class="contact-btn-border"><span class="contact-text">Contact now</span></button>
+                    <button class="contact-btn-border"  href="#contact-us"><span class="contact-text">Contact now</span></button>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -151,7 +257,7 @@
               <div class="container-fluid">
                 <div class="container justify-content-center">
                   <div class="row">
-                   <div class="col-md-7 mb-4 justify-content-center">
+                   <div class="col-md-7 mb-4 justify-content-center"  id="about-us">
                     <h1 class="heading2">SR Divya Agni Control Systems: Your Trusted Partner in Fire Safety and Protection.</h1>
                     <p class="trust2">At <strong>“SR Divya Agni Control Systems”</strong>, we understand the critical importance of fire safety in protecting lives, property, and valuable assets. As a trusted industry leader, we specialize in providing comprehensive fire control and management solutions tailored to the unique needs of our clients. With our expertise and commitment to safety, we offer a wide range of services, including fire risk assessment, installation of advanced fire detection and suppression systems, emergency planning, training, and expert consultancy. Backed by a highly skilled team and years of experience, we strive to deliver efficient and effective solutions that prioritize safety above all else. When it comes to fire safety, SR Divya Agni Control Systems is your reliable partner, ensuring peace of mind and safeguarding against potential hazards.</p>
                    <div class="d-flex checkmark-mob align-items-center">
@@ -212,85 +318,143 @@
               <div class="container-fluid mt-5" style="background-image: url('./Images/expertiseBackground.png'); background-size: cover; background-position: center;">
                 <div class="container">
                   <div class="row justify-content-center">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center" id="expertise">
                       <h1 class="headexperti mb-4">Our Expertise</h1>
                       <p class="text1expertise text-start">Delivering comprehensive fire safety expertise, we specialize in fire risk assessment, advanced detection systems, suppression system installation, emergency planning, training, and expert consultancy.</p>
+                   
                       <div class="row mt-5 my-5">
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
                           <div class="card text-white bg-transparent border-white">
-                            <div class="card-body" >
-                              <h5 class="card-title text-start">1.</h5>
-                              <p class="card-text text-start">Fire Risk Assessment</p>
+                            <div class="card-body flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                  <h5 class="card-title text-start">1.</h5>
+                                  <p class="card-text text-start">Fire Risk Assessment</p>
+                                </div>
+                                <div class="flip-card-back">
+                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card cards text-white bg-transparent border-white">
-                            <div class="card-body">
-                              <h5 class="card-title text-start">2.</h5>
-                              <p class="card-text text-start">Fire Detection System</p>
+                          <div class="card text-white bg-transparent border-white">
+                            <div class="card-body flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                  <h5 class="card-title text-start">2.</h5>
+                                  <p class="card-text text-start">Fire Detection System</p>
+                                </div>
+                                <div class="flip-card-back">
+                                  
+                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card cards text-white bg-transparent border-white">
-                            <div class="card-body">
-                              <h5 class="card-title text-start">3.</h5>
-                              <p class="card-text text-start">Fire Suppression Systems</p>
+                          <div class="card text-white bg-transparent border-white">
+                            <div class="card-body flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                  <h5 class="card-title text-start">3.</h5>
+                                  <p class="card-text text-start">Fire Suppression Systems</p>
+                                </div>
+                                <div class="flip-card-back">
+                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card cards text-white bg-transparent border-white">
-                            <div class="card-body">
-                              <h5 class="card-title text-start">4.</h5>
-                              <p class="card-text text-start">Emergency Planning and Preparedness</p>
+                          <div class="card text-white bg-transparent border-white">
+                            <div class="card-body flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                  <h5 class="card-title text-start">4.</h5>
+                                  <p class="card-text text-start">Emergency Planning and Preparedness</p>
+                                </div>
+                                <div class="flip-card-back">
+                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                          <div class="card cards text-white bg-transparent border-white">
-                            <div class="card-body">
-                              <h5 class="card-title text-start">5.</h5>
-                              <p class="card-text text-start">Expert Consultancy</p>
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
+                          <div class="card text-white bg-transparent border-white">
+                            <div class="card-body flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front ">
+                                  <h5 class="card-title text-start">5.</h5>
+                                  <p class="card-text text-start">Expert Consultancy</p>
+                                </div>
+                                <div class="flip-card-back">
+                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem nihil?</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <style>
-                          .cards:hover,
-                          .cards.hovered {
-                            background-color: #CE2028;
-                            transition: background-color 0.3s ease-in-out;
-                          }
-                        </style>
-                        
-                        
-                        <script>
-                          var cards = document.querySelector('.cards');
-                          cards.addEventListener('touchstart', function() {
-                            cards.classList.add('hovered');
-                          });
-                        
-                          cards.addEventListener('touchend', function() {
-                            cards.classList.remove('hovered');
-                          });
-                        </script>
                       </div>
+                      
+                      <style>
+                        .flip-card {
+                          perspective: 1000px;
+                        }
+                      
+                        .flip-card-inner {
+                          position: relative;
+                          width: 100%;
+                          height: 100%;
+                          transition: transform 0.5s;
+                          transform-style: preserve-3d;
+                        }
+                      
+                        .flip-card:hover .flip-card-inner {
+                          transform: rotateY(180deg);
+                        }
+                      
+                        .flip-card-front,
+                        .flip-card-back {
+                          position: absolute;
+                          width: 100%;
+                          height: 100%;
+                          backface-visibility: hidden;
+                        }
+                      
+                        .flip-card-front {
+                          background-color: transparent;
+                          z-index: 2;
+                        }
+                      
+                        .flip-card-back {
+                          background-color: #CE2028;
+                          transform: rotateY(180deg);
+                          padding: 10px;
+                          color: #fff;
+                        }
+                      </style>
+                      
                     </div> 
                   </div>
                   <div class="row mt-4">
                     <div class="col-md-12">
-                      <p class="text2expertise">We have expertise in conducting thorough fire risk assessments to identify potential hazards, assess vulnerabilities, and recommend proactive measures to mitigate risks.</p>
+                      <p  id="dynamicText" class="text2expertise">We have expertise in conducting thorough fire risk assessments to identify potential hazards, assess vulnerabilities, and recommend proactive measures to mitigate risks.</p>
+                    
                     </div>
                     <div class="col-md-6">
                       <div class="image-container" style="position: relative; display: inline-block;">
                         <img src="./Images/Ellipse 1.png" alt="ellipse" style="vertical-align: middle;">
-                        <img src="./Images/Arrow 3.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+                        <img src="./Images/Arrow 3.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" onclick="changeText(-1)">
                       </div>
                       <img src="./Images/Line 77.png" alt="line" class="m-1">
                       <div class="image-container" style="position: relative; display: inline-block;">
                         <img src="./Images/Ellipse 2.png" alt="ellipse" style="vertical-align: middle;">
-                        <img src="./Images/Arrow 2.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+                        <img src="./Images/Arrow 2.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;"  onclick="changeText(1)">
                       </div>
                     </div>
                     <div class="col-md-12 mt-4 mb-3">
@@ -298,6 +462,35 @@
                     </div>
                   </div>
                 </div>
+              
+           
+          
+                
+                <script>
+                  var texts = [
+                    "We have expertise in conducting thorough fire risk assessments to identify potential hazards, assess vulnerabilities, and recommend proactive measures to mitigate risks.",
+                    "Our team specializes in the design, installation, and maintenance of advanced fire detection systems, including smoke detectors, heat detectors, and flame detectors, ensuring early detection and prompt response.",
+                    "We are proficient in installing and maintaining cutting-edge fire suppression systems, such as sprinklers, fire extinguishers, and gas suppression systems, providing efficient and effective fire control measures.",
+                    "Our experts develop comprehensive emergency plans, evacuation strategies, and fire safety protocols to ensure preparedness and minimize the impact of fire incidents.",
+                    "Our consultancy services provide clients with professional advice, guidance, and compliance support, helping them navigate complex fire safety regulations and ensuring adherence to industry best practices."
+                  ];
+                
+                  var currentIndex = 0;
+                
+                  function changeText(direction) {
+                    currentIndex = currentIndex + direction;
+                    if (currentIndex < 0) {
+                      currentIndex = texts.length - 1; 
+                    } else if (currentIndex >= texts.length) {
+                      currentIndex = 0;
+                    }
+                    var newText = texts[currentIndex];
+                    document.getElementById('dynamicText').textContent = newText;
+                  }
+                </script>
+                
+                
+              
               </div>
               
 
@@ -311,21 +504,42 @@
                     <div class="col-md-4 col-sm-4 mb-4 ">
                       <div class="card card-custom">
                         <div class="card-body">
-                          <!-- Card 1 content here -->
+                         <img src ="./Images/pexels-pixabay-266509.jpg" alt="fire"class="img-fluid" />
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4 col-sm-4 mb-4 ">
                       <div class="card card-custom" >
                         <div class="card-body">
-                          <!-- Card 2 content here -->
+                          <img src ="./Images/pexels-anna-shvets-5964747.jpg" alt="fire"class="img-fluid" />
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4 col-sm-4 mb-4">
                       <div class="card card-custom">
                         <div class="card-body">
-                          <!-- Card 3 content here -->
+                          <img src ="./Images/pexels-pixabay-266509.jpg" alt="fire"class="img-fluid" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 mb-4">
+                      <div class="card card-custom">
+                        <div class="card-body">
+                          <img src ="./Images/pexels-jane-grn-6015394.jpg" alt="fire"class="img-fluid" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 mb-4">
+                      <div class="card card-custom">
+                        <div class="card-body">
+                          <img src ="./Images/pexels-pixabay-266509.jpg" alt="fire"class="img-fluid" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 mb-4">
+                      <div class="card card-custom">
+                        <div class="card-body">
+                          <img src ="./Images/pexels-milton-moreira-9376279.jpg" alt="fire"class="img-fluid" />
                         </div>
                       </div>
                     </div>
@@ -340,12 +554,23 @@
                   
                 </div>
                 <style>
-                 .card-custom {
-                       background-color: #D9D9D9;
-                      width: 100%;
-                       height:358px;
-                       max-width: 358px;
-                     }
+                  .card-custom {
+  background-color: transparent;
+  width: 100%;
+  height: 358px;
+  max-width: 358px;
+}
+
+.card-custom .card-body {
+  padding: 0;
+}
+
+.card-custom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 
                      .card-custom:hover,
@@ -405,50 +630,52 @@
               
               
               <!---------contact page------------>
-
+ <section id="contact-us">
   <div class="container-fluid" style="background-color: #CE2028;">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 justify-content-center px-5">
         <h1 class="text-center text-white text-uppercase mt-4">For more information contact us</h1>
         <p class="text-center text-white text-capitalize">Want to install our Fire Control System in your facility? Or just need more information? Feel free to get in touch with us and get a free quote!</p>
         <form>
           <div class="row mb-3">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" class="form-control border-0 border-bottom" id="name" required>
-                <label for="name" class="form-label text-white">Name*</label>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control border-0 border-bottom" id="name" required>
+                  <label for="name" class="form-label text-white">Name*</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control border-0 border-bottom" id="company" required>
+                  <label for="company" class="form-label text-white">Company Name*</label>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" class="form-control border-0 border-bottom" id="company" required>
-                <label for="company" class="form-label text-white">Company Name*</label>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control border-0 border-bottom" id="phone" required>
+                  <label for="phone" class="form-label text-white">Phone Number*</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" class="form-control border-0 border-bottom" id="email" required>
+                  <label for="email" class="form-label text-white">Email Address*</label>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" class="form-control border-0 border-bottom" id="phone" required>
-                <label for="phone" class="form-label text-white">Phone Number*</label>
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control border-0 border-bottom" id="message" rows="5" required></textarea>
+                  <label for="message" class="form-label text-white">Your Message*</label>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="email" class="form-control border-0 border-bottom" id="email" required>
-                <label for="email" class="form-label text-white">Email Address*</label>
-              </div>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-12">
-              <div class="form-group">
-                <textarea class="form-control border-0 border-bottom" id="message" rows="5" required></textarea>
-                <label for="message" class="form-label text-white">Your Message*</label>
-              </div>
-            </div>
-          </div>
+            
           <div class="row">
             <div class="col-md-12 text-center">
               <button type="submit" class="btn custom-btn mb-4">Submit</button>
@@ -473,6 +700,8 @@
           .form-control:focus {
             outline: none;
             border-bottom-color: #CE2028;
+            background-color: transparent;
+            border: none;
           }
         
           .form-label {
@@ -528,14 +757,28 @@
               label.classList.remove('active');
             }
           }
+     
+
+
         </script>
         </div>
         </div>
   </div>
   </div>
-        
- 
 
+</section>    
+ 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var contactLink = document.querySelector('.contact');
+    var contactSection = document.querySelector('#contact-us');
+  
+    contactLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
 
 
                
@@ -738,42 +981,7 @@
   border: 1px solid #707070;
 }
             
-              .footer {
-  position: relative;            
- }
- .footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #CE2028;
-}
-.footer-icons {
-  position: absolute;
-  top: -40px; 
-  left: 0%; 
-  width: 25%;
-  height: 80px;
-  background-color: #CE2028;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-bottom: 1rem;
-}
-
-@media only screen and (max-width: 767px) {
-  .footer-icons img {
-    max-width: 35px;
-    height: auto;
-  }
-  .footer-icons{
-    background-color: #CE2028;
-    width: 30%;
-    height: 60px; 
-  }
-}
+         
 </style>
             
             <!--================scroller==============-->

@@ -22,30 +22,30 @@
   
     <style>
       .logo {
-        width: 139px;
-        height: 139px;
-        margin-left: 47px;
-        margin-top: 24px;
+        width: 8.6875rem;
+        height: 8.6875rem;
+        margin-left: 2.9375rem;
+        margin-top: 1.5rem;
       }
   
       @media (max-width: 768px) {
         .logo {
-          width: 50px;
-          height: 50px;
+          width: 3.125rem;
+          height: 3.125rem;
         }
       }
   
       @media (min-width: 769px) and (max-width: 992px) {
         .logo {
-          width: 100px;
-          height: 100px;
+          width: 6.25rem;
+          height: 6.25rem;
         }
       }
   
       @media (min-width: 993px) {
         .logo {
-          width: 120px;
-          height: 120px;
+          width: 7.5rem;
+          height: 7.5rem;
         }
       }
   
@@ -54,10 +54,10 @@
       }
   
       .border-rounded {
-        border-radius: 20px;
+        border-radius: 1.25rem;
       }
   
-      /* Reduce padding/margin for navbar items */
+    
       .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
@@ -88,17 +88,17 @@
             </li>
           </ul>
           <button class="nav-item phone-border d-flex justify-content-center align-items-center">
-            <span style="margin-top: 10px;"><span class="material-symbols-outlined text-center" style="color: #CE2028; display: inline-block; vertical-align: middle;">
+            <span style="margin-top: 10px;">  <a href="tel:+9876543210" class="footer-links"><span class="material-symbols-outlined text-center mb-2" style="color: #CE2028; display: inline-block; vertical-align: middle;">
               call
             </span>
             <p class="phone " style="display: inline-block; vertical-align: middle; margin-left: 5px;">
               9876543210
-            </p></span>
+            </p></a></span>
           </button>
           
           
           <button class="nav-item contact-border justify-content-center">
-            <a class="nav-link contact text-white text-center"style="margin-bottom: 13px;" href="#contact-us">Contact us</a>
+            <a class="nav-link contact text-white text-center"style="margin-bottom: 15px;" href="#contact-us">Contact us</a>
           </button>
 
         </div>
@@ -108,7 +108,7 @@
     <style>
       .home-div {
         position: absolute;
-        top: 70px;
+        top: 4.375rem;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -123,7 +123,7 @@
         button{
           display: flex;
           flex-direction: column;
-          
+          margin: 0.5rem;
         }
       
       }
@@ -132,7 +132,7 @@
         button{
           display: flex;
           flex-direction: column;
-          
+          margin: 0.5rem;
         }
       }
   
@@ -141,8 +141,8 @@
         font-family: "Commissioner";
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
         letter-spacing: 0.015em;
         text-transform: uppercase;
         color: #000000;
@@ -157,8 +157,8 @@
         font-family: "Commissioner";
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
         letter-spacing: 0.015em;
         text-transform: uppercase;
         color: #000000;
@@ -168,8 +168,8 @@
         font-family: "Commissioner";
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
         letter-spacing: 0.015em;
         text-transform: uppercase;
         color: #000000;
@@ -184,6 +184,8 @@
         top: 70px;
         border: 2px solid #CE2028;
         border-radius: 12px;
+        background-color: transparent;
+        padding: 5px 10px;
       }
   
       .contact-border {
@@ -228,7 +230,18 @@
                     <h1 class="main-heading  display-4 fw-bold fs-3rem text-start" style="color:#000000">Safeguarding lives and property</h1>
                     <p class="trust text-start mb-5">Your trusted partner for comprehensive fire safety solutions.</p>
                     <p class="lives text-start ">Protecting lives and property with expertise and precision, SR Divya Agni Control Systems is your trusted partner for comprehensive fire safety solutions.</p>
-                    <button class="contact-btn-border"  href="#contact-us"><span class="contact-text">Contact now</span></button>
+                    <button class="contact-btn-border" onclick="scrollToContact()">
+                      <span class="contact-text">Contact now</span>
+                    </button>
+                    
+                   <script>
+                    function scrollToContact() {
+  var contactSection = document.getElementById('contact-us');
+  contactSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+                   </script>
+                    
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -447,14 +460,14 @@
                     
                     </div>
                     <div class="col-md-6">
-                      <div class="image-container" style="position: relative; display: inline-block;">
-                        <img src="./Images/Ellipse 1.png" alt="ellipse" style="vertical-align: middle;">
-                        <img src="./Images/Arrow 3.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" onclick="changeText(-1)">
+                      <div class="image-container" style="position: relative; display: inline-block;" onclick="changeText(-1)">
+                        <img src="./Images/Ellipse 1.png" alt="ellipse" style="vertical-align: middle;" >
+                        <img src="./Images/Arrow 3.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;" >
                       </div>
                       <img src="./Images/Line 77.png" alt="line" class="m-1">
-                      <div class="image-container" style="position: relative; display: inline-block;">
-                        <img src="./Images/Ellipse 2.png" alt="ellipse" style="vertical-align: middle;">
-                        <img src="./Images/Arrow 2.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;"  onclick="changeText(1)">
+                      <div class="image-container" style="position: relative; display: inline-block;" onclick="changeText(1)">
+                        <img src="./Images/Ellipse 2.png" alt="ellipse" style="vertical-align: middle;" >
+                        <img src="./Images/Arrow 2.png" alt="arrow" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;"  >
                       </div>
                     </div>
                     <div class="col-md-12 mt-4 mb-3">
@@ -501,48 +514,109 @@
                     <div class="col-md-12">
                       <h1 class="mt-5 mb-5 gallery">Gallery</h1>
                     </div>
-                    <div class="col-md-4 col-sm-4 mb-4 ">
+                    <div class="col-md-4 col-sm-4 mb-4">
                       <div class="card card-custom">
-                        <div class="card-body">
-                         <img src ="./Images/pexels-pixabay-266509.jpg" alt="fire"class="img-fluid" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 mb-4 ">
-                      <div class="card card-custom" >
-                        <div class="card-body">
-                          <img src ="./Images/pexels-anna-shvets-5964747.jpg" alt="fire"class="img-fluid" />
+                        <div class="card-body flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
+                            </div>
+                            <div class="flip-card-back">
+                              <div class="flip-card-text">
+                                <h3>Hover Text</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio amet deserunt corrupti delectus soluta corporis natus ad odit molestiae recusandae? Voluptate perspiciatis culpa, possimus illo officiis magnam fuga dignissimos fugiat illum minima quod.</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4 col-sm-4 mb-4">
                       <div class="card card-custom">
-                        <div class="card-body">
-                          <img src ="./Images/pexels-pixabay-266509.jpg" alt="fire"class="img-fluid" />
+                        <div class="card-body flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="./Images/pexels-anna-shvets-5964747.jpg" alt="fire" class="img-fluid" />
+                            </div>
+                            <div class="flip-card-back">
+                              <div class="flip-card-text">
+                                <h3>Hover Text</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet labore non nihil quia, nulla perspiciatis odit quos animi blanditiis, provident voluptatem sed rerum eius nisi molestiae atque aperiam sint quibusdam veritatis eligendi. Accusantium tempora optio recusandae nihil reiciendis et aliquid distinctio nemo, odio cupiditate facere dicta eaque voluptates placeat, iste culpa facilis voluptate at doloribus necessitatibus maiores quod rem est quidem?</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4 col-sm-4 mb-4">
                       <div class="card card-custom">
-                        <div class="card-body">
-                          <img src ="./Images/pexels-jane-grn-6015394.jpg" alt="fire"class="img-fluid" />
+                        <div class="card-body flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
+                            </div>
+                            <div class="flip-card-back">
+                              <div class="flip-card-text">
+                                <h3>Hover Text</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptate recusandae sunt iure, error amet omnis nemo sit dicta velit facilis nihil maiores architecto magnam, praesentium accusamus itaque labore placeat ex commodi eum odio incidunt. Perferendis enim veritatis rem?</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4 col-sm-4 mb-4">
                       <div class="card card-custom">
-                        <div class="card-body">
-                          <img src ="./Images/pexels-pixabay-266509.jpg" alt="fire"class="img-fluid" />
+                        <div class="card-body flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="./Images/pexels-jane-grn-6015394.jpg" alt="fire" class="img-fluid" />
+                            </div>
+                            <div class="flip-card-back">
+                              <div class="flip-card-text">
+                                <h3>Hover Text</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis nobis itaque mollitia error soluta earum maxime. Optio nisi blanditiis omnis hic voluptatum, minus accusantium aperiam eaque placeat doloribus molestias praesentium, labore quia. Laborum libero delectus illo deserunt pariatur optio, sed reiciendis doloremque. Nihil, quo.</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4 col-sm-4 mb-4">
                       <div class="card card-custom">
-                        <div class="card-body">
-                          <img src ="./Images/pexels-milton-moreira-9376279.jpg" alt="fire"class="img-fluid" />
+                        <div class="card-body flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
+                            </div>
+                            <div class="flip-card-back">
+                              <div class="flip-card-text">
+                                <h3>Hover Text</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus, voluptatum dolores vel consequatur voluptas adipisci eum architecto? Accusamus sed nesciunt, ipsum quasi, consectetur repudiandae eveniet quisquam cumque incidunt sequi debitis dolores laudantium nihil sit eos est odio magni hic labore quidem repellendus aliquid ex rem. Pariatur nam aliquid quasi corporis aspernatur nemo ab fugit.</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div class="col-md-4 col-sm-4 mb-4">
+                      <div class="card card-custom">
+                        <div class="card-body flip-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="./Images/pexels-milton-moreira-9376279.jpg" alt="fire" class="img-fluid" />
+                            </div>
+                            <div class="flip-card-back">
+                              <div class="flip-card-text">
+                                <h3>Hover Text</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, error est temporibus itaque nemo aspernatur vel omnis excepturi pariatur perferendis, iure quaerat facere delectus possimus eum eveniet perspiciatis! In, quibusdam.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
                   <div class="row mt-3 mb-5">
                     <div class="col-12 d-flex justify-content-center ">
@@ -639,36 +713,40 @@
         <p class="text-center text-white text-capitalize">Want to install our Fire Control System in your facility? Or just need more information? Feel free to get in touch with us and get a free quote!</p>
         <form>
           <div class="row mb-3">
-            <div class="row mb-3">
-              <div class="col-md-6">
+            <div class="row mb-3 justify-content-center">
+              <div class="col-md-5 ">
                 <div class="form-group">
                   <input type="text" class="form-control border-0 border-bottom" id="name" required>
                   <label for="name" class="form-label text-white">Name*</label>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-1"></div> <!-- Add an empty column for spacing -->
+              <div class="col-md-5">
                 <div class="form-group">
                   <input type="text" class="form-control border-0 border-bottom" id="company" required>
                   <label for="company" class="form-label text-white">Company Name*</label>
                 </div>
               </div>
             </div>
-            <div class="row mb-3">
-              <div class="col-md-6">
+            
+            <div class="row mb-3 justify-content-center">
+              <div class="col-md-5">
                 <div class="form-group">
                   <input type="text" class="form-control border-0 border-bottom" id="phone" required>
                   <label for="phone" class="form-label text-white">Phone Number*</label>
                 </div>
+               
               </div>
-              <div class="col-md-6">
+              <div class="col-md-1"></div>
+              <div class="col-md-5">
                 <div class="form-group">
                   <input type="email" class="form-control border-0 border-bottom" id="email" required>
                   <label for="email" class="form-label text-white">Email Address*</label>
                 </div>
               </div>
             </div>
-            <div class="row mb-3">
-              <div class="col-md-12">
+            <div class="row mb-3 justify-content-center">
+              <div class="col-md-11">
                 <div class="form-group">
                   <textarea class="form-control border-0 border-bottom" id="message" rows="5" required></textarea>
                   <label for="message" class="form-label text-white">Your Message*</label>
@@ -676,11 +754,13 @@
               </div>
             </div>
             
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <button type="submit" class="btn custom-btn mb-4">Submit</button>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn custom-btn mb-4 mx-auto mt-4 mb-5">
+                  <span class="submit-text">Submit</span>
+                </button>
+              </div>
             </div>
-          </div>
         </form>
         
         <style>
@@ -695,6 +775,7 @@
             border-bottom: 1px solid #fff;
             transition: border-bottom-color 0.3s;
             padding-top: 10px;
+           color: #fff;
           }
         
           .form-control:focus {
@@ -702,6 +783,7 @@
             border-bottom-color: #CE2028;
             background-color: transparent;
             border: none;
+            color: #fff;
           }
         
           .form-label {
@@ -720,24 +802,36 @@
             transform: translateY(0);
             font-size: 12px;
             opacity: 1;
+            border: none;
+          
           }
           .custom-btn {
-  left: calc(50% - 316px/2);
-  background: #FFFFFF;
-  border-radius: 16px;
-  padding: 7px 25px;
-  
-  font-family: 'Commissioner';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 13.75rem;
+height: 4.3125rem;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+}
+
+.submit-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  font-family: "Commissioner";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
   letter-spacing: 0.015em;
-  text-transform: capitalize;
-  
-  color: #FF0000;
+  text-transform: uppercase;
+  color: #ce2028;
 }
+
         </style>
         
         <script>
@@ -791,8 +885,8 @@
                       <div class="testimonial-wrapper">
                       <h1 class=" text-start mt-4 testimonial">What our clients say</h1>
                       </div>
-                    </div>
-                    <div class="row mt-4">
+                  
+                    <div class="row mt-5">
                       <div class="col-md-3 justify-content-center">
                         <div class="card mycard">
                           <div class="card-body d-flex justify-content-center align-items-center">
@@ -802,10 +896,11 @@
                         <p class="text-bold testi-lorem text-center" id="">lorem ipsum (dolor)</p>
                       </div>
               
-                      <div class="col-md-9 justify-content-center">
+                      <div class="col-md-9 mt-4 justify-content-center">
                         <p class="testimonial-text text-center" id="clientText">Lorem ipsum dolor sit amet consectetur. Tincidunt id magna turpis libero vel sit dui nulla adipiscing. Leo cras sollicitudin phasellus aenean in ac viverra suspendisse tincidunt. Pulvinar orci non varius eu vivamus sociis montes tellus.</p>
+                        
                       </div>
-                      <div class="col-md-6 text-start mb-5 d-flex mt-5 ">
+                      <div class="col-md-5 text-start mb-5 d-flex mt-5 ms-3">
                         <div class="image-container d-flex justify-content-center" style="position: relative;">
                           <img src="./Images/Ellipse 3.png" alt="ellipse" style="vertical-align: middle;">
                           <img src="./Images/Arrow 5.png" alt="arrow" class="arrow" onclick="changeImage('previous')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
@@ -818,10 +913,11 @@
                       </div>
                       <div class=" hide col-md-6 text-start">
                         <!-- <div class="row mt-3 mb-5"> -->
-                          <!-- <div class="col-12 d-flex justify-content-center "> -->
+                          <div class="col-6 d-flex justify-content-center ">
                             <img src="./Images/Rectangle 66.png" alt="slider" class="mx-0">
                             <img src="./Images/Rectangle 67.png" alt="slider" class="mx-1">
                             <img src="./Images/Rectangle 68.png" alt="slider" class="mx-0">
+                          </div>
                           </div>
                           <style>
                             @media (max-width: 767px) {
@@ -834,6 +930,7 @@
                       </div>
                     </div>
                   </div>
+                  </div>
              
               
               <style>
@@ -842,7 +939,7 @@
                 }
               
                 .mycard {
-                  margin: auto;
+                  margin-left: 1.5625rem;
                   text-align: center;
                 }
               
@@ -900,8 +997,8 @@
               
                   setTimeout(function () {
                     imageContainer.style.transform = 'translateX(-50%)';
-                    clientImage.src = './Images/Ellipse ' + currentImage + '.png';
-                    clientText.textContent = 'Lorem ipsum (dolor) ' + currentImage;
+                    clientImage.src = './Images/client ' + currentImage + '.jpg';
+                    clientText.textContent = 'Lorem ipsum dolor sit amet consectetur. Tincidunt id magna turpis libero vel sit dui nulla adipiscing.';
                     imageContainer.classList.remove(direction === 'next' ? 'left' : 'right');
                     clientImage.classList.remove(direction === 'next' ? 'left' : 'right');
                     clientText.classList.remove(direction === 'next' ? 'left' : 'right');
@@ -926,9 +1023,9 @@
                 <div class="row ">
                   <div class="col-md-12 text-center bg-dark  justify-content-center">
                     <div class="footer-icons text-white">
-                      <i class="fab"><img src="./Images/Instagram (1).png" alt=""></i>
-                      <i class="fab"><img src="./Images/LinkedIn.png" alt=""></i>
-                      <i class="fab"><img src="./Images/Facebook.png" alt=""></i>
+                      <i class="fab"> <a href="https://www.instagram.com/" target="_blank"><img src="./Images/Instagram (1).png" alt=""></a></i>
+                      <i class="fab"><a href="https://www.linkedin.com/"><img src="./Images/LinkedIn.png" alt=""></a></i>
+                      <i class="fab"><a href="https://www.facebook.com/"><img src="./Images/Facebook.png" alt=""></a></i>
                     </div>
                     <div class="footer-pic mt-5">
                       <div class="footer-logo">
@@ -940,32 +1037,50 @@
                       <h5 class="text-white">Safety before fire</h5>
                       <hr>
                       <div class="d-flex justify-content-center text-center">
-                        <a class="nav-link custom-link" href="register.html">HOME</a>
-                        <a class="nav-link custom-link" href="register.html">ABOUT US</a>
-                        <a class="nav-link custom-link" href="register.html">SERVICES</a>
-                        <a class="nav-link custom-link" href="register.html">CONTACT US</a>
+                        <a class="nav-link custom-link" href="#">HOME</a>
+                        <a class="nav-link custom-link" href="#about-us">ABOUT US</a>
+                        <a class="nav-link custom-link" href="#expertise">SERVICES</a>
+                        <a class="nav-link custom-link" href="#contact-us">CONTACT US</a>
                       </div>
                       <style>
                         .custom-link {
-                          color: white;
-                          text-decoration: none;
-                        }
+                            color: white;
+                            text-decoration: none;
+                            }
+
+                          .custom-link:visited {
+                                 color: white;
+                                  }
+
+                           .custom-link:hover {
+                                    color: #fff;
+                                   }
                         </style>
                     <div class="d-flex justify-content-center">
-                      <div class="d-flex text-white me-1">
-                        <span class="material-symbols-outlined">call</span>
-                        <p>-9876543210</p>
+                      <div class="text-white me-1">
+                        <a href="tel:+9876543210" class="d-flex footer-links">
+                          <span class="material-symbols-outlined">call</span>
+                          <p>-9876543210</p>
+                        </a>
                       </div>
+                      
                       <div class="d-flex text-white ms-1">
-                        <span class="material-symbols-outlined">mail</span>
-                        <p>-FIRESAFETY@GMAIL.COM</p>
+                        <a href="mailto:FIRESAFETY@GMAIL.COM" class="d-flex footer-links">
+                          <span class="material-symbols-outlined">mail</span>
+                          <p>-FIRESAFETY@GMAIL.COM</p>
+                        </a>
                       </div>
+                      
                     </div>
                     
                     </div>
                   </div>
                   <div class="col-md-12 text-center bg-danger text-white">
-                    <h3>Copyrights reserved by 2023 @digitalshakha</h3>
+                    <h3>
+                      Copyrights reserved by 2023 @
+                      <a href="https://www.digitalshakha.in/" class="footer-links" target="_blank">digitalshakha</a>
+                    </h3>
+                    
                   </div>
                 </div>
               </div>
@@ -980,11 +1095,16 @@
   top: 4532px;
   border: 1px solid #707070;
 }
-            
+.footer-links {
+    color: white;
+   text-decoration: none;
+  }
+   .footer-links:hover{
+    color: #fff;
+   }         
          
 </style>
-            
-            <!--================scroller==============-->
+      
            
             
             

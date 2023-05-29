@@ -11,113 +11,13 @@ body {
 
 
   /* ==========navbar=========== */
- .dropdown-menu {
-  background-color: #f8f9fa; 
-}
-
-.home-div {
-  position: absolute;
-  top: 4.375rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  left: 0;
-}
-
-
-@media (max-width: 767px) {
-  .home-div {
-    justify-content: flex-start;
-  }
-}
-
-
-
-.nav-home {
-  height: 1.5rem;
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.navbar-nav {
-  list-style: none;
-}
-
-
-
-.nav-about {
-  height: 1.5rem; 
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.phone {
-
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: #000000;
-} 
-
-.phone-border {
-  box-sizing: border-box;
-  /* height: 47px; */
-  left: 70%;
-  right: 16.74%;
-  top: 70px;
-  border: 2px solid #CE2028;
-  border-radius: 12px;
-}
-
-@media (max-width: 767px) {
-  .phone-border {
-    justify-content: flex-start;
-  }
-}
-
-
-.contact-border {
-  box-sizing: border-box;
-  margin-left: 0.5rem;
-  height: 47px;
-  left: 83.82%;
-  right: 2.92%;
-  top: 70px;
-  background-color: #CE2028;
-  border: 2px solid #CE2028;
-  border-radius: 12px;
-}
-
-.nav-service {
-  height: 1.5rem; 
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 24px;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: #000000;
-}
+  
   /* ==============main-content================== */
 
   .contact-btn-border {
+    display: flex;
+  justify-content: center;
+  align-items: center;
     box-sizing: border-box;
     width: 13.75rem;
     height: 4.3125rem;
@@ -130,6 +30,9 @@ body {
   }
 
   .contact-text {
+    display: flex;
+  justify-content: center;
+  align-items: center;
     height: 35px;
     font-family: "Commissioner";
     font-style: normal;
@@ -150,8 +53,7 @@ body {
   font-family: "Commissioner";
   font-style: normal;
   font-weight: 600;
-  font-size: 46px;
-  line-height: 160.3%;
+  font-size: 2.875rem;
   text-align: justify;
   letter-spacing: 0.015em;
   text-transform: uppercase;
@@ -163,22 +65,17 @@ body {
 
 
 .card-title {
-
   height: 80px;
- 
-  
   font-family: 'Commissioner';
   font-style: normal;
   font-weight: 300;
   font-size: 50px;
-  line-height: 160.3%;
+ 
   margin-bottom: 0.4rem;
   text-align: justify;
   letter-spacing: 0.015em;
   text-transform: uppercase;
-  
-  color: #FFFFFF;
-  
+  color: #FFFFFF; 
 }
 
 .checkmark-text {
@@ -189,7 +86,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 160.3%;
+  /* line-height: 160.3%; */
   text-align: justify;
   letter-spacing: 0.015em;
   color: #CE2028;

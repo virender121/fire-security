@@ -240,6 +240,22 @@
                         font-weight: bold;
                       }
                       }
+                      @media (min-width: 768px) and (max-width: 992px) {
+                        .contact-btn-border:hover{
+                        width: 80%;
+                        .contact-text{
+                        font-weight: bold;
+                      }
+                      }
+                      }
+                      @media (max-width: 768px){
+                        .contact-btn-border:hover{
+                        width: 80%;
+                        .contact-text{
+                        font-weight: bold;
+                      }
+                      }
+                      }
                       
                     </style>
                    <script>
@@ -280,7 +296,7 @@
                   <div class="row">
                    <div class="col-md-7 mb-4 justify-content-center"  id="about-us">
                     <h1 class="heading2">SR Divya Agni Control Systems: Your Trusted Partner in Fire Safety and Protection.</h1>
-                    <p class="trust2">At <strong>“SR Divya Agni Control Systems”</strong>, we understand the critical importance of fire safety in protecting lives, property, and valuable assets. As a trusted industry leader, we specialize in providing comprehensive fire control and management solutions tailored to the unique needs of our clients. With our expertise and commitment to safety, we offer a wide range of services, including fire risk assessment, installation of advanced fire detection and suppression systems, emergency planning, training, and expert consultancy. Backed by a highly skilled team and years of experience, we strive to deliver efficient and effective solutions that prioritize safety above all else. When it comes to fire safety, SR Divya Agni Control Systems is your reliable partner, ensuring peace of mind and safeguarding against potential hazards.</p>
+                    <p class="trust2 mt-3">At <strong>“SR Divya Agni Control Systems”</strong>, we understand the critical importance of fire safety in protecting lives, property, and valuable assets. As a trusted industry leader, we specialize in providing comprehensive fire control and management solutions tailored to the unique needs of our clients. With our expertise and commitment to safety, we offer a wide range of services, including fire risk assessment, installation of advanced fire detection and suppression systems, emergency planning, training, and expert consultancy. Backed by a highly skilled team and years of experience, we strive to deliver efficient and effective solutions that prioritize safety above all else. When it comes to fire safety, SR Divya Agni Control Systems is your reliable partner, ensuring peace of mind and safeguarding against potential hazards.</p>
                    <div class="d-flex checkmark-mob align-items-center">
                     <div class="col-2 col-md-2 text-start" style="padding-left: 0; left: 0;">
                      <img src="./Images/Line 77.png" alt="" class="line1">
@@ -345,119 +361,71 @@
                    
                       <div class="row mt-5 my-5">
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card text-white bg-transparent border-white">
-                            <div class="card-body flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                  <h5 class="card-title text-start">1.</h5>
-                                  <p class="card-text text-start">Fire Risk Assessment</p>
-                                </div>
-                                <div class="flip-card-back">
-                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
-                                </div>
-                              </div>
+                          <div class="card text-white bg-transparent border-white" onclick="changeItem(0)">
+                            <div class="card-body">
+                              <h5 class="card-title text-start">1.</h5>
+                              <p class="card-text text-start">Fire Risk Assessment</p>
                             </div>
                           </div>
                         </div>
+                        
+                        
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card text-white bg-transparent border-white">
-                            <div class="card-body flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front">
+                          <div class="card text-white bg-transparent border-white"  onclick="changeItem(1)">
+                            <div class="card-body ">
+                              
                                   <h5 class="card-title text-start">2.</h5>
                                   <p class="card-text text-start">Fire Detection System</p>
                                 </div>
-                                <div class="flip-card-back">
-                                  
-                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
-                                </div>
+                               
                               </div>
                             </div>
-                          </div>
-                        </div>
+                        
+                        
                         <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
-                          <div class="card text-white bg-transparent border-white">
-                            <div class="card-body flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front">
+                          <div class="card text-white bg-transparent border-white"  onclick="changeItem(2)">
+                            <div class="card-body">
+                             
                                   <h5 class="card-title text-start">3.</h5>
                                   <p class="card-text text-start">Fire Suppression Systems</p>
-                                </div>
-                                <div class="flip-card-back">
-                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
-                                </div>
-                              </div>
+                               
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4"  onclick="changeItem(3)">
                           <div class="card text-white bg-transparent border-white">
-                            <div class="card-body flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front">
+                            <div class="card-body ">
+                          
                                   <h5 class="card-title text-start">4.</h5>
                                   <p class="card-text text-start">Emergency Planning and Preparedness</p>
-                                </div>
-                                <div class="flip-card-back">
-                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil totam at perspiciatis, fugiat voluptate magni consequatur?.</p>
-                                </div>
+                                
+                               
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4">
+                      
+                        <div class="col-lg-2 col-md-4 col-sm-6 mb-4 me-4"  onclick="changeItem(4)">
                           <div class="card text-white bg-transparent border-white">
-                            <div class="card-body flip-card">
-                              <div class="flip-card-inner">
-                                <div class="flip-card-front ">
+                            <div class="card-body">
+                             
                                   <h5 class="card-title text-start">5.</h5>
                                   <p class="card-text text-start">Expert Consultancy</p>
-                                </div>
-                                <div class="flip-card-back">
-                                  <p class="card-text text-start" style="font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem nihil?</p>
-                                </div>
+                               
                               </div>
                             </div>
                           </div>
-                        </div>
+                        
                       </div>
                       
                       <style>
-                        .flip-card {
-                          perspective: 1000px;
-                        }
-                      
-                        .flip-card-inner {
-                          position: relative;
-                          width: 100%;
-                          height: 100%;
-                          transition: transform 0.5s;
-                          transform-style: preserve-3d;
-                        }
-                      
-                        .flip-card:hover .flip-card-inner {
-                          transform: rotateY(180deg);
-                        }
-                      
-                        .flip-card-front,
-                        .flip-card-back {
-                          position: absolute;
-                          width: 100%;
-                          height: 100%;
-                          backface-visibility: hidden;
-                        }
-                      
-                        .flip-card-front {
-                          background-color: transparent;
-                          z-index: 2;
-                        }
-                      
-                        .flip-card-back {
-                          background-color: #CE2028;
-                          transform: rotateY(180deg);
-                          padding: 10px;
-                          color: #fff;
-                        }
+                       .card.hover {
+                           background-color: #CE2028 !important; 
+                          }
+
+                      .card.active {
+                         background-color: #CE2028 !important;
+                             }
+
                       </style>
                       
                     </div> 
@@ -508,6 +476,24 @@
                     var newText = texts[currentIndex];
                     document.getElementById('dynamicText').textContent = newText;
                   }
+
+                  function changeItem(index) {
+                    var cards = document.getElementsByClassName('card');
+    var activeCard = document.querySelector('.card.active');
+
+    
+    if (activeCard) {
+      activeCard.classList.remove('active');
+    }
+
+
+    var card = cards[index];
+    card.classList.add('active');
+
+    var newText = texts[index];
+    document.getElementById('dynamicText').textContent = newText;
+}
+
                 </script>
                 
                 
@@ -521,110 +507,136 @@
                   <div class="row">
                     <div class="col-md-12">
                       <h1 class="mt-5 mb-5 gallery">Gallery</h1>
-                    </div>
-                    <div class="col-md-4 col-sm-4 mb-4">
-                      <div class="card card-custom">
-                        <div class="card-body flip-card">
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                              <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
-                            </div>
-                            <div class="flip-card-back">
-                              <div class="flip-card-text">
-                                <h3>Hover Text</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio amet deserunt corrupti delectus soluta corporis natus ad odit molestiae recusandae? Voluptate perspiciatis culpa, possimus illo officiis magnam fuga dignissimos fugiat illum minima quod.</p>
+                  
+                          <div class=" text-center">
+                            <div class="row mx-auto my-auto justify-content-center">
+                              <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                  <div class="carousel-item active">
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                      <div class="card card-custom">
+                                        <div class="card-body">
+                                        <img src="./Images/pexels-milton-moreira-9376279.jpg" alt="fire" class="img-fluid" />
+        
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                      <div class="card card-custom">
+                                        <div class="card-body">
+                                        <img src="./Images/pexels-anna-shvets-5964747.jpg" alt="fire" class="img-fluid" />
+        
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                      <div class="card card-custom">
+                                        <div class="card-body">
+                                        <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
+        
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                      <div class="card card-custom">
+                                        <div class="card-body">
+                                        <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
+        
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                      <div class="card card-custom">
+                                        <div class="card-body">
+                                        <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
+        
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="col-md-4 col-sm-4 mb-4">
+                                      <div class="card card-custom">
+                                        <div class="card-body">
+                                        <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
+        
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </a>
                               </div>
-                            </div>
+                            </div>		
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 mb-4">
-                      <div class="card card-custom">
-                        <div class="card-body flip-card">
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                              <img src="./Images/pexels-anna-shvets-5964747.jpg" alt="fire" class="img-fluid" />
-                            </div>
-                            <div class="flip-card-back">
-                              <div class="flip-card-text">
-                                <h3>Hover Text</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet labore non nihil quia, nulla perspiciatis odit quos animi blanditiis, provident voluptatem sed rerum eius nisi molestiae atque aperiam sint quibusdam veritatis eligendi. Accusantium tempora optio recusandae nihil reiciendis et aliquid distinctio nemo, odio cupiditate facere dicta eaque voluptates placeat, iste culpa facilis voluptate at doloribus necessitatibus maiores quod rem est quidem?</p>
-                              </div>
-                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 mb-4">
-                      <div class="card card-custom">
-                        <div class="card-body flip-card">
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                              <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
-                            </div>
-                            <div class="flip-card-back">
-                              <div class="flip-card-text">
-                                <h3>Hover Text</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptate recusandae sunt iure, error amet omnis nemo sit dicta velit facilis nihil maiores architecto magnam, praesentium accusamus itaque labore placeat ex commodi eum odio incidunt. Perferendis enim veritatis rem?</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 mb-4">
-                      <div class="card card-custom">
-                        <div class="card-body flip-card">
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                              <img src="./Images/pexels-jane-grn-6015394.jpg" alt="fire" class="img-fluid" />
-                            </div>
-                            <div class="flip-card-back">
-                              <div class="flip-card-text">
-                                <h3>Hover Text</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis nobis itaque mollitia error soluta earum maxime. Optio nisi blanditiis omnis hic voluptatum, minus accusantium aperiam eaque placeat doloribus molestias praesentium, labore quia. Laborum libero delectus illo deserunt pariatur optio, sed reiciendis doloremque. Nihil, quo.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 mb-4">
-                      <div class="card card-custom">
-                        <div class="card-body flip-card">
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                              <img src="./Images/pexels-pixabay-266509.jpg" alt="fire" class="img-fluid" />
-                            </div>
-                            <div class="flip-card-back">
-                              <div class="flip-card-text">
-                                <h3>Hover Text</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus, voluptatum dolores vel consequatur voluptas adipisci eum architecto? Accusamus sed nesciunt, ipsum quasi, consectetur repudiandae eveniet quisquam cumque incidunt sequi debitis dolores laudantium nihil sit eos est odio magni hic labore quidem repellendus aliquid ex rem. Pariatur nam aliquid quasi corporis aspernatur nemo ab fugit.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 mb-4">
-                      <div class="card card-custom">
-                        <div class="card-body flip-card">
-                          <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                              <img src="./Images/pexels-milton-moreira-9376279.jpg" alt="fire" class="img-fluid" />
-                            </div>
-                            <div class="flip-card-back">
-                              <div class="flip-card-text">
-                                <h3>Hover Text</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, error est temporibus itaque nemo aspernatur vel omnis excepturi pariatur perferendis, iure quaerat facere delectus possimus eum eveniet perspiciatis! In, quibusdam.</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
+                          <style>
+                            @media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	
+	                @media (min-width: 768px) {
+
+		                .carousel-inner .carousel-item-end.active,
+		                  .carousel-inner .carousel-item-next {
+			                  transform: translateX(25%);
+                       
+		                    }
+
+		                   .carousel-inner .carousel-item-start.active, 
+		                   .carousel-inner .carousel-item-prev {
+		                       	transform: translateX(-25%);
+		                     }
+	                      }
+
+	                     .carousel-inner .carousel-item-end,
+	                     .carousel-inner .carousel-item-start { 
+		                  transform: translateX(0);
+	                   }
+                     
+                          </style>
+                          <script>
+                            let items = document.querySelectorAll('.carousel .carousel-item')
+
+                            items.forEach((el) => {
+                            const minPerSlide = 3
+                            let next = el.nextElementSibling
+                            for (var i=1; i<minPerSlide; i++) {
+                            if (!next) {
+        
+                          next = items[0]
+                            }
+                           let cloneChild = next.cloneNode(true)
+                              el.appendChild(cloneChild.children[0])
+                               next = next.nextElementSibling
+                             }
+                            })
+                          </script>
                   </div>
                   <div class="row mt-3 mb-5">
                     <div class="col-12 d-flex justify-content-center ">
@@ -637,43 +649,23 @@
                 </div>
                 <style>
                   .card-custom {
-  background-color: transparent;
-  width: 100%;
-  height: 358px;
-  max-width: 358px;
-}
+                      background-color: transparent;
+                      width: 100%;
+                     height: 358px;
+                     max-width: 358px;
+                    }
 
-.card-custom .card-body {
-  padding: 0;
-}
+                   .card-custom .card-body {
+                   padding: 0;
+                   }
 
-.card-custom img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-
-                     .card-custom:hover,
-                     .card-custom.hovered {
-                     background-color: #CE2028;
-                     transition: background-color 0.3s ease-in-out;
-                       }
-
+                 .card-custom img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  }
                 </style>
-                <script>
-                  var cardCustom = document.querySelector('.card-custom');
-                  cardCustom.addEventListener('touchstart', function() {
-                  cardCustom.classList.add('hovered');
-                  });
-
-
-                cardCustom.addEventListener('touchend', function() {
-                cardCustom.classList.remove('hovered');
-                 });
-
-                </script>
+                
               </div>
               
               
@@ -728,7 +720,7 @@
                   <label for="name" class="form-label text-white">Name*</label>
                 </div>
               </div>
-              <div class="col-md-1"></div> <!-- Add an empty column for spacing -->
+              <div class="col-md-1"></div> 
               <div class="col-md-5">
                 <div class="form-group">
                   <input type="text" class="form-control border-0 border-bottom" id="company" required>
@@ -776,9 +768,9 @@
             position: relative;
           }
           
-          .form-control {
+         .form-control {
             background-color: transparent;
-            border: none;
+            border: none ;
             border-radius: 0;
             border-bottom: 1px solid #fff;
             transition: border-bottom-color 0.3s;
@@ -788,12 +780,15 @@
         
           .form-control:focus {
             outline: none;
-            border-bottom-color: #CE2028;
+            /* border-bottom-color: #CE2028; */
             background-color: transparent;
-            border: none;
+          
             color: #fff;
+            box-shadow: none;
+            border-bottom: 1px solid #fff;
           }
-        
+    
+
           .form-label {
             position: absolute;
             pointer-events: none;
@@ -810,7 +805,7 @@
             transform: translateY(0);
             font-size: 12px;
             opacity: 1;
-            border: none;
+         
           
           }
           .custom-btn {
@@ -844,6 +839,22 @@ height: 4.3125rem;
   .submit-text{
     font-weight: bold;
   }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .custom-btn:hover{
+  width: 50%;
+  .submit-text{
+    font-weight: bold;
+  }
+}
+}
+@media (max-width: 768px){
+  .custom-btn:hover{
+  width: 80%;
+  .submit-text{
+    font-weight: bold;
+  }
+}
 }
 
         </style>

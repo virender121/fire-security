@@ -15,7 +15,12 @@ left: calc(50% - 334px/2 - 24px);
 top: 81px;
 
 }
-
+input:focus{
+  border: none !important;
+}
+.form-control:focus{
+  border: none !important;
+}
 
 .navbar-nav {
   list-style: none;
@@ -90,6 +95,13 @@ top: 70px;
 background-color: #CE2028;
 border: 2px solid #CE2028;
 border-radius: 12px;
+}
+.card.hover {
+  background-color: #CE2028; 
+}
+
+.card.active {
+  background-color: #CE2028;
 }
 
 .contact-btn-border{

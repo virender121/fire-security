@@ -145,19 +145,20 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10px; /* Adjust the value to increase or decrease the space */
   width: 15%;
   height: 0.4rem;
   background-color: #CE2028;
   transition: transform 0.3s;
   transform: translateX(0);
-  
 }
 
 .heading2:hover::after {
   transform: translateX(-100%);
   width: 0;
 }
+
+
 
 .trust {
   font-family: "Commissioner";

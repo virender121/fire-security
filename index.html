@@ -233,7 +233,15 @@
                     <button class="contact-btn-border" onclick="scrollToContact()">
                       <span class="contact-text">Contact now</span>
                     </button>
-                    
+                    <style>
+                      .contact-btn-border:hover{
+                        width: 40%;
+                        .contact-text{
+                        font-weight: bold;
+                      }
+                      }
+                      
+                    </style>
                    <script>
                     function scrollToContact() {
   var contactSection = document.getElementById('contact-us');
@@ -826,10 +834,16 @@ height: 4.3125rem;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 29px;
+  /* line-height: 29px; */
   letter-spacing: 0.015em;
   text-transform: uppercase;
   color: #ce2028;
+}
+.custom-btn:hover{
+  width: 20%;
+  .submit-text{
+    font-weight: bold;
+  }
 }
 
         </style>
